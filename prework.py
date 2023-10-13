@@ -45,6 +45,9 @@ def is_consecutive(a_list):
     for i in range(1, len(sorted_list)):
         if sorted_list[i] != sorted_list[i - 1] + 1:
             return False
-        else:
-            return True
+    return True
+
+
+result = is_consecutive([1, 2, 3, 4, 5, 7])
+print(result)
 
